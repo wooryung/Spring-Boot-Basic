@@ -33,6 +33,7 @@
         <div>
             <input type="text" name="company" placeholder="Company"/>
         </div>
+
         <button type="submit">회원가입</button>
     </form>
 </body>

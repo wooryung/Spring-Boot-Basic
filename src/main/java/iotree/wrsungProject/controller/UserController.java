@@ -84,7 +84,7 @@ public class UserController {
     }
 
     @PostMapping("/delete")
-    public String withdraw(HttpSession session) { // 탈퇴
+    public String withdraw(HttpSession session) { // 회원 탈퇴
         Long id = (Long) session.getAttribute("userId");
         if (id != null) {
             userService.withdraw(id);

@@ -26,8 +26,9 @@ public class UserService {
 
     public Long login(String email, String password) {
         UserVo userVo = userMapper.getUserByEmail(email);
-        if (userVo.getPassword().equals(password))
+        if (userVo.getPassword().equals(password)) {
             return userVo.getId();
+        }
         return null;
     }
 

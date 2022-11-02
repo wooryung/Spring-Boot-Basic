@@ -41,6 +41,7 @@
             Company<br>
             <input type="text" name="company" value="${user.company}"/>
         </p>
+
         <button type="submit">저장하기</button>
     </form>
 </body>

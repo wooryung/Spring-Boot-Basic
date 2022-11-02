@@ -33,7 +33,7 @@
         )
     </insert>
 
-    <!-- 로그인한 회원 정보 -->
+    <!-- 회원 정보 가져오기 -->
     <select id="getUserByEmail" resultType="iotree.wrsungProject.vo.UserVo">
         SELECT *
         FROM User

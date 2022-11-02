@@ -8,6 +8,7 @@
 </head>
 <body>
     <h2>${user.username}님의 회원 정보</h2>
+
     <p>name: ${user.name}</p>
     <p>username: ${user.username}</p>
     <p>email: ${user.email}</p>

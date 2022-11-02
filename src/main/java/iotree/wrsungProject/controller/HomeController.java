@@ -18,7 +18,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(HttpSession session, Model model) {
         Long id = (Long) session.getAttribute("userId");
-        if (id != null) {
+        if (id != null) { // 로그인된 상태
             UserVo userVo = userService.getUserById(id);
             model.addAttribute("user", userVo);
             return "home";
